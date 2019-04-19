@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/movieImage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxHeight="200dp"
+                android:layout_margin="@dimen/movie_title_text"
+                android:layout_gravity="center"
+                android:scaleType="fitCenter"
+                android:src="@drawable/add_image2" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/container"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="0dp">
+
+            <LinearLayout
+                android:id="@+id/titleCont"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@color/colorPrimary"
+
+                    android:src="@drawable/ic_movie_creation" />
+                <EditText
+                    android:id="@+id/etTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="#39d2dde1"
+                    android:gravity="center_vertical"
+                    android:hint="Title"
+                    android:paddingLeft="16dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/descCont"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/titleCont"
+                android:layout_marginTop="18dp"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/imageButton"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@color/colorPrimary"
+                    android:src="@drawable/ic_description" />
+
+                <EditText
+                    android:id="@+id/etDesc"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="#39d2dde1"
+                    android:gravity="center_vertical"
+                    android:hint="Description"
+                    android:paddingLeft="16dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/urlCont"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/descCont"
+                android:layout_marginTop="18dp"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/imageButton2"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@color/colorPrimary"
+                    android:src="@drawable/ic_link" />
+
+                <EditText
+                    android:id="@+id/etUrl"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="#39d2dde1"
+                    android:gravity="center_vertical"
+                    android:hint="Url"
+                    android:paddingLeft="16dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/castCont"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/urlCont"
+                android:layout_marginTop="18dp"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@color/colorPrimary"
+                    android:src="@drawable/cast"
+                    android:tint="@android:color/white"/>
+
+                <EditText
+                    android:id="@+id/etCast"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="#39d2dde1"
+                    android:gravity="center_vertical"
+                    android:hint="Cast"
+                    android:paddingLeft="16dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/genreCont"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/castCont"
+                android:layout_marginTop="18dp"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@color/colorPrimary"
+                    android:src="@drawable/genre"
+                    android:tint="@android:color/white"/>
+
+                <EditText
+                    android:id="@+id/etGenre"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="#39d2dde1"
+                    android:gravity="center_vertical"
+                    android:hint="Genre"
+                    android:paddingLeft="16dp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/addMovie"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/genreCont"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/colorPrimary"
+                android:padding="16dp"
+                android:text="Save"
+                android:textColor="@android:color/white" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+</ScrollView>
